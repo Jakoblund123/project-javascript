@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <header class="hero" >
+        
+        <div class="nav-container">
+            <span class="nav-toggle">
+                <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
+            </span>
+              <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#main">Movies</a></li>
+                    <li><a href="#movie-form">Add Movie</a></li>
+                   
+                </ul>
+                    
+                </nav>
+
+
+        </div>
+            <h1 class="hero-title">The best movies</h1>
+    </header>
+    <main id="main">
+        <section >
+            <div class="movie-cards">
+
+            </div>
+        </section>
+
+        <div>
+            <form id="movie-form">
+
+                <label for="movie-title">Movie Title:</label>
+                <input type="text" id="movie-title" name="movie-title" required>
+
+                 <label for="movie-genre">Genre:</label>
+                 <input type="text" id="movie-genre" name="movie-genre" required>
+
+                <label for="movie-director">Director:</label>
+                <input type="text" id="movie-director" name="movie-director" required>
+
+                <label for="movie-year">Release Year:</label>
+                <input type="number" id="movie-year" name="movie-year" required>
+
+                <label for="movie-description">Description:</label>
+                <textarea id="movie-description" name="movie-description" required></textarea>
+
+                <label for="movie-img">Image URL:</label>
+                <input type="file" id="movie-img" name="img" accept="image/*" required>
+
+                <button type="submit">Add Movie</button>
+            </form>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>© 2024 Movie Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
